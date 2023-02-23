@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>YouTube Home Page</title>
-        <link rel="stylesheet" href="styles.css">
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-    <header class="header">
-            <div class="header-wrapper">
-        <div class="logo-column">
-          <div class="logo">
-            <a href="/">
-              <img src="./img/svg/menu-icon.svg" alt="Logo">
-            </a>
-          </div>
-          <div class="logo">
-            <a href="/">
-              <img src="./img/svg/youtube-icon.svg" alt="Logo">
-            </a>
-          </div>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="logo-column">
+        <div class="logo">
+          <a href="/">
+            <img src="./img/svg/menu-icon.svg" alt="Logo">
+          </a>
         </div>
-        <div class="search-column">
-          <form class="search-form">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><img src="./img/svg/search-icon.svg" alt="Search icon"/></button>
+        <div class="logo">
+          <a href="/">
+            <img src="./img/svg/youtube-icon.svg" alt="Logo">
+          </a>
+        </div>
+      </div>
+      <div class="search-column">
+        <form class="search-form">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><img src="./img/svg/search-icon.svg" alt="Search icon" /></button>
         </form>
       </div>
-        <div class="nav-column">
-          <nav class="navigation">
-            <ul>
-              <li><a href="#"><img src="./img/svg/camera-icon.svg" alt="camera icon"/></a></li>
-              <li><a href="#"><img src="./img/svg/dots-menu.svg" alt="dot menu icon"/></a></li>
-              <li>
-                <div class="notify-badge">3</div>
-                <a href="#"><img src="./img/svg/notification-icon.svg" alt="notification icon"/></a>
-              </li>
-              <li><a href="#"><img src="./img/svg/userpic.svg" alt="user icon"/></a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="nav-column">
+        <nav class="navigation">
+          <ul>
+            <li><a href="#"><img src="./img/svg/camera-icon.svg" alt="camera icon" /></a></li>
+            <li><a href="#"><img src="./img/svg/dots-menu.svg" alt="dot menu icon" /></a></li>
+            <li>
+              <div class="notify-badge">3</div>
+              <a href="#"><img src="./img/svg/notification-icon.svg" alt="notification icon" /></a>
+            </li>
+            <li><a href="#"><img src="./img/svg/userpic.svg" alt="user icon" /></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-      </header>
-      <main>
-        <div class="container">
-          <div class="sidebar">
-            <ul>
-              <li><a href="#"><img src="./img/svg/home-icon.svg" alt="home icon"/>Home</a></li>
-              <li><a href="#"><img src="./img/svg/trending-icon.svg" alt="trending icon"/>Trending</a></li>
-              <li><a href="#"><img src="./img/svg/subscription-icon.svg" alt="subscription icon"/>Subscriptions</a></li>
-            </ul>
+  </header>
+  <main>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#"><img src="./img/svg/home-icon.svg" alt="home icon" />Home</a></li>
+          <li><a href="#"><img src="./img/svg/trending-icon.svg" alt="trending icon" />Trending</a></li>
+          <li><a href="#"><img src="./img/svg/subscription-icon.svg" alt="subscription icon" />Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="channel-container">
+          <div class="image-container">
+            <img src="./img/jpg/person.jfif" alt="Image">
           </div>
-          <div class="content">
-            <div class="channel-container">
-            <div class="image-container">
-              <img src="./img/jpg/person.jfif" alt="Image">
-            </div>
-            <h2>Dollie Blair</h2>
-          </div>
-            <div class="video-container">
-              <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
-              <h2>Never Gonna Give You Up</h2>
-              <div class="video-container-desc">
-              <p>80k views  .   3 days ago</p>
-              <p>Rick Astley</p>
-            </div>
-              
-            </div>
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
-              <h2>Never Gonna Give You Up</h2>
-              <p>Rick Astley</p>
-            </div>
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/2Vv-BfVoq4g/maxresdefault.jpg" alt="Video Thumbnail">
-              <h2>Uptown Funk ft. Bruno Mars</h2>
-              <p>Mark Ronson</p>
-            </div>
-            <div class="video">
-              <img src="https://i.ytimg.com/vi/3tmd-ClpJxA/maxresdefault.jpg" alt="Video Thumbnail">
-              <h2>Shape of You</h2>
-              <p>Ed Sheeran</p>
-            </div>
+          <h2>Dollie Blair</h2>
+          <div class="video-arrow-wrapper">
+            <div class="video-arrow"><i class="left"></i></div>
+            <div class="video-arrow"><i class="right"></i></div>
           </div>
         </div>
-    </main>
-    <aside>
-      <p>123123123</p>
-    </aside>
-    <footer>
-      <!-- Footer content, such as copyright information and links -->
-    </footer>
+        <div class="video-wrapper"></div>
+        <div class="video-container">
+          <div class="video-badge">3:54</div>
+          <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
+          <h2>Never Gonna Give You Up</h2>
+          <div class="video-container-desc">
+            <p>80k views . 3 days ago</p>
+            <p>Rick Astley</p>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="video-badge">4:55</div>
+          <img src="https://i.ytimg.com/vi/2Vv-BfVoq4g/maxresdefault.jpg" alt="Video Thumbnail">
+          <h2>Uptown Funk</h2>
+          <div class="video-container-desc">
+            <p>80k views . 3 days ago</p>
+            <p>Mark Ronson</p>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="video-badge">5:55</div>
+          <img src="https://i.ytimg.com/vi/3tmd-ClpJxA/maxresdefault.jpg" alt="Video Thumbnail">
+          <h2>Shape of You</h2>
+          <div class="video-container-desc">
+            <p>80k views . 3 days ago</p>
+            <p>Ed Sheeran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <aside>
+    <p>123123123</p>
+  </aside>
+  <footer>
+    <!-- Footer content, such as copyright information and links -->
+  </footer>
 </body>
+
 </html>
