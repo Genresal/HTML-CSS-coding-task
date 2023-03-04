@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="content.css">
+    <!--<link rel="stylesheet" href="content.css">-->
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="videoPlayerPage.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
 </head>
 
@@ -54,83 +55,91 @@
     <main>
         <div class="container">
             <div>
-            <div style="display: flex; margin-left: 80px;">
-                <div class="col-lg">
-                    <div>
-                        <div class="video-player">
-                            <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
-                        </div>
-                        <h2>Never Gonna Give You Up</h2>
-                        <div class="video-container-desc">
-                            <p>80k views</p>
-                            <div class="video-player-menu">
-                                <button class="transparent-button">
-                                    <img src="./img/svg/like-icon.svg" alt="Video Thumbnail">
-                                    <span>123k</span>
-                                </button>
-                                <button class="transparent-button">
-                                    <img src="./img/svg/dislike-icon.svg" alt="Video Thumbnail">
-                                    <span>321k</span>
-                                </button>
-                                <button class="transparent-button">
-                                    <img src="./img/svg/share-icon.svg" alt="Video Thumbnail">
-                                    <span>Share</span>
-                                </button>
-                                <img style="margin-left: 40px;" src="./img/svg/dots-menu-icon.svg" alt="Search icon" />
+                <div style="display: flex;">
+                    <div class="column-left">
+                        <div class="video-player-container">
+                            <div class="video-player">
+                                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
                             </div>
+                            <div class="video-player-desc">
+                                <h2>Never Gonna Give You Up</h2>
+                                <div class="video-player-footer">
+                                    <p>555k views</p>
+                                    <div class="video-player-menu">
+                                        <button class="transparent-button">
+                                            <img src="./img/svg/like-icon.svg" alt="Like">
+                                            <span>123k</span>
+                                        </button>
+                                        <button class="transparent-button">
+                                            <img src="./img/svg/dislike-icon.svg" alt="Dislike">
+                                            <span>321k</span>
+                                        </button>
+                                        <button class="transparent-button">
+                                            <img src="./img/svg/share-icon.svg" alt="Share">
+                                            <span>Share</span>
+                                        </button>
+                                        <img style="margin-left: 40px;" src="./img/svg/dots-menu-icon.svg" alt="Menu" />
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-sm">
-                    <div>
-                        <div style="display: flex;">
-                            <h2 style="margin: 0;">Next</h2>
-                            <p style="margin: 0;">autoplay</p>
-                            <label class="switch">
-                                <input type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        <div class="video-container container-sm">
-                            <div class="video-badge">3:54</div>
-                            <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
-                            <h2>Never Gonna Give You Up</h2>
-                            <div class="video-container-desc">
-                                <p>80k views</p>
-                                <p>Rick Astley</p>
+                        <div class="channer-container">
+                            <div class="image-container img-container-lg">
+                                <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg?w=996&t=st=1677592634~exp=1677593234~hmac=9ff88d0c551fdc0bad20d1464808656b23f7396eb2d52d6b8308c0c649b76a0a"
+                                    alt="Image">
                             </div>
+                            <div>
+                                <h2>Food & Drink</h2>
+                                <p class="channer-container-info">Published on 14 Jun 2019</p>
+                                <p class="channer-text">A successful marketing plan relies heavily on the pulling-power
+                                    of advertising copy.
+                                    Writing result-oriented ad copy is difficult, as it must appeal to, entice, and
+                                    convince
+                                    consumers to take action. There is no magic formula to write perfect ad copy; it is
+                                    based on a number of factors, including ad placement, demographic, even the
+                                    consumer’s
+                                    mood when they see your ad. </p>
+                                <p class="channer-text-show-more">Show more</p>
+                            </div>
+                            <button class="rounded-button">Subscribe 2.3m</button>
                         </div>
-                        <div class="video-container container-sm">
-                            <div class="video-badge">3:54</div>
-                            <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
-                            <h2>Never Gonna Give You Up</h2>
-                            <div class="video-container-desc">
-                                <p>80k views</p>
-                                <p>Rick Astley</p>
+
+                    </div>
+
+                    <div class="column-right">
+                        <div>
+                            <div class="next-title">
+                                <h2 >Next</h2>
+                                <p >AUTOPLAY</p>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="video-container container-sm">
+                                <div class="video-badge">3:54</div>
+                                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
+                                <h2>Never Gonna Give You Up</h2>
+                                <div class="video-container-desc">
+                                    <p>80k views</p>
+                                    <p>Rick Astley</p>
+                                </div>
+                            </div>
+                            <div class="video-container container-sm">
+                                <div class="video-badge">3:54</div>
+                                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Video Thumbnail">
+                                <h2>Never Gonna Give You Up</h2>
+                                <div class="video-container-desc">
+                                    <p>80k views</p>
+                                    <p>Rick Astley</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="content-container">
-                <div class="title-container">
-                    <div class="image-container img-container-md">
-                        <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg?w=996&t=st=1677592634~exp=1677593234~hmac=9ff88d0c551fdc0bad20d1464808656b23f7396eb2d52d6b8308c0c649b76a0a"
-                            alt="Image">
-                    </div>
-                    <div>
-                        <h2>Food & Drink</h2>
-                        <p>Published on 14 Jun 2019</p>
-                        <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad. </p>
-                    </div>
-                    <div class="video-arrow-wrapper">
-                        <button class="rounded-button">Subscribe 2.3m</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </main>
     <footer>
