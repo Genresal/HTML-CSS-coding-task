@@ -13,6 +13,24 @@
     display: flex;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu img {
+    max-height: 50px;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -100,9 +118,28 @@
     width: 1rem;
     text-align: center;
     line-height: 1rem;
-    ;
     font-size: 0.8rem;
     border-radius: 50%;
     color: white;
     border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    .menu 
+    /*.menu img*/
+    {
+        display: none;
+    }
+
+    .search-column {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
 }

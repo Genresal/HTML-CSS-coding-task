@@ -1,5 +1,6 @@
 .container {
     position: relative;
+    display: flex;
     margin: 0 80px;
     font-family: 'Muli';
 }
@@ -23,12 +24,12 @@
     margin-bottom: 25px;
 }
 
-.next-title h2{
+.next-title h2 {
     font-size: 36px;
     margin: 0;
 }
 
-.next-title p{
+.next-title p {
     font-size: 16px;
     margin: 0;
 }
@@ -42,7 +43,8 @@
 
 .video-player {
     width: 100%;
-    height: 700px;
+    height: calc(100% - 50px);
+    display: block;
 }
 
 .video-player img {
@@ -55,6 +57,7 @@
 .video-player-container .controls {
     position: absolute;
     bottom: 120px;
+    max-width: 100%;
     width: 100%;
     justify-content: space-around;
 }
@@ -93,6 +96,7 @@
     display: flex;
     justify-content: space-between;
     margin: 20px 40px 30px;
+    max-width: 100%;
 }
 
 .video-player-container .controls .panel .group-left {
@@ -240,4 +244,26 @@ hr {
     margin-top: 4px;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column-left {
+        margin: 0;
+max-width: 100%;
+min-width: 100%;
+        
+    }
+
+    .container {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .video-player img{
+        border-radius: 0px;
+    }
 }
