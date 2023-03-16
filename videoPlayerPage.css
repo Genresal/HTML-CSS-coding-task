@@ -1,0 +1,243 @@
+.container {
+    position: relative;
+    margin: 0 80px;
+    font-family: 'Muli';
+}
+
+.column-left {
+    float: left;
+    width: 80%;
+    margin-right: 40px;
+}
+
+.column-right {
+    float: right;
+    width: 20%;
+    min-width: 200px;
+}
+
+.next-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.next-title h2{
+    font-size: 36px;
+    margin: 0;
+}
+
+.next-title p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.video-player-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.video-player {
+    width: 100%;
+    height: 700px;
+}
+
+.video-player img {
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.video-player-container .controls {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.video-player-container :hover .controls {
+    opacity: 1;
+}
+
+.video-player-container .controls .timers {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.video-player-container .controls .timers p {
+    color: white;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.video-player-container .controls .timeline {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 0px 30px 20px;
+}
+
+.video-player-container .controls .timeline .bar {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.video-player-container .controls .panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 30px;
+}
+
+.video-player-container .controls .panel .group-left {
+    display: flex;
+    align-items: center;
+}
+
+.video-player-container .controls .panel .group-left img {
+    margin-right: 40px;
+}
+
+.video-player-container .controls .panel .group-right {
+    display: flex;
+    align-items: center;
+}
+
+.video-player-container .controls .panel .group-right img {
+    margin-left: 25px;
+}
+
+.video-player-container .controls .panel .group-left .volume {
+    width: 100px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.video-player-container .controls .panel .group-left .volume .bar {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.video-player-container .description {
+    margin-top: 20px;
+}
+
+.video-player-container .description h2 {
+    margin: 0;
+}
+
+.video-player-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-player-footer p {
+    color: gray;
+    font-size: 20px;
+}
+
+.video-player-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.channer-container {
+    display: flex;
+    align-items: top;
+    margin-bottom: 30px;
+}
+
+.channer-container h2 {
+    margin: 0;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.channer-container-info {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 14px;
+}
+
+.channer-text {
+    font-size: 16px;
+    max-width: 840px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.channer-text-show-more {
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.container-sm {
+    width: 250px;
+    height: 200px;
+}
+
+.container-md {
+    width: 540px;
+    height: 300px;
+}
+
+.container-lg {
+    width: 1120px;
+    height: 250px;
+}
+
+.video-container:last-child {
+    margin-right: 0;
+}
+
+.video-container img {
+    border-radius: 14px;
+    width: 100%;
+    height: calc(100% - 50px);
+    display: block;
+}
+
+.video-container h2 {
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.video-container p {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+.video-container-desc {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}

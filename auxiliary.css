@@ -1,0 +1,70 @@
+/*.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+}
+*/
+.badge {
+    color: white;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.group-left,
+.group {
+    display: flex;
+}
+
+.group img {
+    margin-right: 25px;
+}
+
+.group-left img {
+    margin-left: 40px;
+}
+
+
+.pos {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.volume {
+    width: 100px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.volume-bar {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
