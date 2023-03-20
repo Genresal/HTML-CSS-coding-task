@@ -1,0 +1,482 @@
+.container {
+    position: relative;
+    display: flex;
+    max-width: 1760px;
+    margin: 0 auto;
+    font-family: 'Muli';
+}
+
+/*Mobile*/
+.mobile-sidebar {
+    display: none;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.nav-text {
+    margin-top: 5px;
+    margin-left: 13px;
+    color: #898989;
+}
+
+.nav-text:hover {
+    color: #ff0000;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/*End of Mobile*/
+
+.column-left {
+    float: left;
+    flex: 1 1 80%;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+.column-right {
+    flex-direction: column;
+    gap: 200rem;
+    flex: 1 1 20%;
+}
+
+/*controls*/
+
+.player-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30PX;
+    justify-content: space-around;
+}
+
+.player-controls .timers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.player-controls .timers p {
+    color: white;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.player-controls .timeline {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.player-controls .timeline .bar {
+    width: 75%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.player-controls .panel {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.player-controls .panel .group-left {
+    display: flex;
+    align-items: center;
+}
+
+.player-controls .panel .group-left img {
+    margin: 0 20px;
+    max-height: 24px;
+}
+
+.player-controls .panel .group-left .volume {
+    width: 100px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.player-controls .panel .group-left .volume .bar {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.player-controls .panel .group-right {
+    display: flex;
+    align-items: center;
+}
+
+.player-controls .panel .group-right img {
+    margin: 0 12px;
+    max-height: 27px;
+}
+
+/*Mobile controls*/
+
+.mobile-player-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-player-controls::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    /* Set the opacity of the background */
+    z-index: -1;
+    /* Set the z-index to -1 to position the background behind the image */
+    border-radius: 10px;
+}
+
+.mobile-player-controls img {
+    margin: 0 10px;
+    max-height: 12px;
+    max-width: 20px;
+}
+
+.mobile-player-controls p {
+    font-size: 10px;
+    color: white;
+}
+
+.mobile-player-controls .timeline {
+    margin: 0 10px;
+    height: 5px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+
+}
+
+.mobile-player-controls .timeline .bar {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+/*Player*/
+
+.player-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.player-container .description {
+    margin-top: 20px;
+}
+
+.player-container .description h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.player-container .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-container .footer p {
+    margin: 0;
+    color: gray;
+    font-size: 20px;
+}
+
+.player-container .footer .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+/* video container with descriptions, maybe I needs to separate it*/
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.video-container .content {
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    object-fit: cover;
+}
+
+.video-container .title {
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.video-container .badge {
+    position: absolute;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 60px;
+}
+
+.video-container .description {
+    margin-bottom: 0px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container .description p {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+/*mobile channel container*/
+.mobile-channer-container {
+    display: none;
+    align-items: top;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.mobile-channer-container .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.mobile-channer-container .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-channer-container h2 {
+    margin: 0;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.mobile-channer-container .info {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 14px;
+}
+
+/*channel container*/
+
+.channer-container {
+    display: flex;
+    align-items: top;
+    margin-bottom: 30px;
+}
+
+.channer-container .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.channer-container .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.channer-container h2 {
+    margin: 0;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.channer-container .info {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 14px;
+}
+
+.channer-container .text {
+    font-size: 16px;
+    max-width: 840px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.channer-container .show-more {
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+}
+
+/*RIGHT*/
+.next-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.next-title h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.next-title .autoplay {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.next-title .autoplay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.hr {
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .mobile-sidebar {
+        display: block;
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .mobile-sidebar .nav-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-sidebar .nav-link img {
+        max-height: 20px;
+    }
+
+    .mobile-sidebar .nav-menu {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 13px;
+        padding-bottom: 11px;
+        border-top: 1px solid#F1F1F1;
+    }
+
+    .nav-text {
+        margin-left: 0;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .column-left {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .channer-container {
+        display: none;
+    }
+
+    .mobile-channer-container {
+        display: flex;
+    }
+
+    .player-controls {
+        display: none;
+    }
+
+    .player-container .footer {
+        flex-direction: column;
+    }
+
+    .player-container .footer p {
+        font-size: 12px;
+    }
+
+    .mobile-player-controls {
+        display: flex;
+    }
+
+    .main {
+        min-height: calc(100% - 50px);
+        /* subtract footer height from viewport height */
+        padding-bottom: 100px;
+        /* height of footer */
+    }
+}
