@@ -1,3 +1,5 @@
+/*delete*/
+
 html {
     max-width: 100%;
     overflow-x: hidden;
@@ -26,6 +28,8 @@ html {
     float: left;
     width: 25%;
   }
+
+
 
   /*
 @media (max-width: 767px) {

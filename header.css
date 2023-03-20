@@ -13,49 +13,59 @@
     display: flex;
 }
 
-.menu {
+.header-left {
+    display: flex;
+    float: left;
+    width: 15%;
+    min-width: 200px;
+}
+
+.header-right {
+    display: flex;
+    float: left;
+    width: 85%;
+}
+
+.header-menu {
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
 
-.menu img {
+.header-menu img {
     max-height: 50px;
 }
 
-.mobile-menu {
-    display: block;
-}
-
-.mobile-menu {
+/*mobile*/
+.mobile-header-menu {
     display: none;
+    align-items: center;
 }
 
-.logo {
+/**/
+.header-logo {
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
 
-.logo img {
+.header-logo img {
     max-height: 50px;
 }
 
-.logo :last-child {
+.header-logo :last-child {
     margin-right: 0px;
 }
 
-.search-column {
+.header-search-column {
     display: inline-flex;
 }
 
-.nav-column {
+.header-nav-column {
     margin-left: auto;
 }
 
-.search-form {}
-
-.search-form input[type="text"] {
+.search-input[type="text"] {
     padding: 8px 16px;
     border-radius: 24px;
     border: none;
@@ -68,13 +78,13 @@
     padding-right: 48px;
 }
 
-.search-form input[type="text"]:focus {
+.search-input[type="text"]:focus {
     outline: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #fff;
 }
 
-.search-form button[type="submit"] {
+.search-button[type="submit"] {
     background-color: transparent;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -82,26 +92,27 @@
     background: none;
     outline: none;
     margin-left: -2.5rem;
+    margin-right: 20px;
 }
 
-.navigation ul {
+.header-navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: inline-flex;
 }
 
-.navigation li {
+.header-navigation li {
     margin-right: 50px;
     display: flex;
     align-items: center;
 }
 
-.navigation li:last-child {
+.header-navigation li:last-child {
     margin-right: 70px;
 }
 
-.navigation a {
+.header-navigation a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -124,21 +135,22 @@
 }
 
 @media (max-width: 767px) {
-    .menu 
+    .header-menu
+
     /*.menu img*/
-    {
+        {
         display: none;
     }
 
-    .search-column {
+    .header-search-column {
         display: none;
     }
 
-    .navigation {
+    .header-navigation {
         display: none;
     }
 
-    .mobile-menu {
-        display: block;
+    .mobile-header-menu {
+        display: flex;
     }
 }
