@@ -80,10 +80,8 @@
 /* video container */
 
 .video-wrapper {
-    /*position: relative;*/
-    /*white-space: nowrap;*/
     flex-wrap: nowrap;
-    overflow-y: auto;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 
@@ -151,61 +149,6 @@
     margin: 0;
 }
 
-/**/
-/*
-  .video-container {
-    /*position: relative;
-    overflow: hidden;
-    display: inline-block;
-    flex-direction: column;
-    margin-right: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .container-sm {
-    width: 250px;
-    height: 200px;
-  }
-  
-  .container-md {
-    width: 540px;
-    height: 300px;
-  }
-  
-  .container-lg {
-    width: 1120px;
-    height: 250px;
-  }
-  
-  .video-container:last-child {
-    margin-right: 0;
-  }
-  
-  .video-container img {
-    border-radius: 14px;
-    width: 100%;
-    height: calc(100% - 50px);
-    display: block;
-  }
-  
-  .video-container h2 {
-    font-size: 16px;
-    margin: 0px;
-    margin-top: 10px;
-  }
-  
-  .video-container p {
-    font-size: 13px;
-    color: gray;
-    margin: 0;
-  }
-  
-  .video-container-desc {
-    margin-top: 4px;
-    display: flex;
-    justify-content: space-between;
-  }*/
-
 /*reusable*/
 
 .arrow-buttons-wrapper {
@@ -213,6 +156,58 @@
     align-items: center;
     margin-left: auto;
     margin-right: 10%;
-    width: 66px;
+    /*width: 66px;*/
     justify-content: space-between;
 }
+
+.arrow-buttons-wrapper > *:not(:last-child) {
+    margin-right: 10px; /* adds 10px margin between all child elements except for the last one */
+  }
+
+  @media (max-width: 767px) {
+    .main {
+        min-height: calc(100% - 50px);
+        /* subtract footer height from viewport height */
+        padding-bottom: 100px;
+        /* height of footer */
+    }
+
+    .container {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .column-left {
+        display: none;
+    }
+
+    .hideable {
+        display: none;
+    }
+
+    .channel .title {
+        display: none;
+    }
+    /*
+    .content {
+        flex-direction: column;
+    }
+
+    .channel {
+        flex-direction: column;
+    }*/
+
+    .video-wrapper {
+        all: unset;
+        flex-direction: column;
+    }
+
+    .video-container {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .video-container .title {
+        display: block;
+    }
+  }

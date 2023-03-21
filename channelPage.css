@@ -1,9 +1,434 @@
-.video-description {
-    margin-left: 32px;
+.container {
+    font-family: 'Muli';
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
-.video-stats {
+.container * {
+    font-family: inherit;
+}
+
+.column-left {
+    float: left;
+    flex: 1 1 15%;
+}
+
+.column-right {
+    flex-direction: column;
+    gap: 200rem;
+    flex: 1 1 85%;
+}
+
+/*content part*/
+.content {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.channel {
+    margin-bottom: 50px;
+}
+
+
+.channel .background {
+    border-radius: 14px;
+    width: 100%;
+    height: 280px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.channel .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.channel .title h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.channel .title p {
+    margin: 0;
+    color: gray;
+}
+
+.channel .title .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.channel .title .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.channel .title .text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.channel .controls {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0%;
+    justify-content: space-between;
+}
+
+/**/
+
+.channel-details {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.channel-details .left {
+    float: left;
+    width: 75%;
+    margin-right: 40px;
+}
+
+.channel-details .left .menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.channel-details .left .menu>*:not(:last-child) {
+    margin-right: 70px;
+    /* adds 10px margin between all child elements except for the last one */
+}
+
+.channel-details .left .menu .active-tab {
+    font-weight: bold;
+    color: red;
+    border-bottom: solid red 2px;
+}
+
+.channel-details .left .menu a {
+    font-size: 18px;
+}
+
+.channel-details .right {
+    float: left;
+    width: 25%;
+}
+
+/*mobile channel details*/
+
+.mobile-channel {
+    display: none;
+    flex-flow: column nowrap;
+}
+
+.mobile-channel .background {
+    width: 100%;
+    height: 100px;
+}
+
+.mobile-channel .title {
+    margin-left: 15px;
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+
+.mobile-channel .title h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.mobile-channel .title p {
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.mobile-channel .title .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.mobile-channel .title .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-channel .menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.mobile-channel .menu>*:not(:last-child) {
+    margin-right: 40px;
+    /* adds 10px margin between all child elements except for the last one */
+}
+
+.mobile-channel .menu .active-tab {
+    font-weight: bold;
+    color: red;
+    border-bottom: solid red 2px;
+}
+
+.mobile-channel .menu a {
+    font-size: 14px;
+}
+
+
+
+.preview-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 60%;
+}
+
+.preview-container .content {
+    border-radius: 14px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    object-fit: cover;
+}
+
+.preview-container .badge {
+    position: absolute;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.preview-description {
+    width: 60%;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    flex-direction: column;
+}
+
+.preview-description {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.preview-description p {
+    position: relative;
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+
+.preview-stats {
+    position: absolute;
     font-size: 16px;
     color: gray;
-    margin-bottom: auto;
+    bottom: 0;
+}
+
+
+
+.channel-content .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.channel-content .title h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+/* video container */
+
+.video-wrapper {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-height: 200px;
+    height: 200px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.video-container .content {
+    border-radius: 14px;
+    width: auto;
+    height: calc(100% - 50px);
+    aspect-ratio: 16/9;
+    display: block;
+    object-fit: cover;
+}
+
+.video-container .title {
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.video-container .badge {
+    position: absolute;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 60px;
+}
+
+.video-container .description {
+    margin-bottom: 0px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container .description p {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+
+/**/
+
+.proposals h2 {
+    color: gray;
+    font-size: 16px;
+}
+
+.proposals .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.proposals .title h2 {
+    color: #000;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.proposals .title .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.proposals .title .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+.arrow-buttons-wrapper>*:not(:last-child) {
+    margin-right: 10px;
+    /* adds 10px margin between all child elements except for the last one */
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .main {
+        min-height: calc(100% - 50px);
+        /* subtract footer height from viewport height */
+        padding-bottom: 100px;
+        /* height of footer */
+    }
+
+    .container {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .column-left {
+        display: none;
+    }
+
+    .channel {
+        display: none;
+    }
+
+    .channel-details {
+        display: none;
+    }
+
+    .channel-content .title {
+        display: none;
+    }
+
+    .mobile-channel {
+        display: flex;
+    }
+
+    .video-wrapper {
+        all: unset;
+        flex-direction: column;
+    }
+
+    .video-container {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .video-container .title {
+        display: block;
+    }
+
 }
