@@ -1,0 +1,213 @@
+.container {
+    font-family: 'Muli';
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.container * {
+    font-family: inherit;
+}
+
+.column-left {
+    float: left;
+    flex: 1 1 15%;
+}
+
+.column-right {
+    flex-direction: column;
+    gap: 200rem;
+    flex: 1 1 85%;
+}
+
+/*content part*/
+
+.content {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.channel {
+    margin-bottom: 50px;
+}
+
+.channel .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.channel .title h2 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.channel .title p {
+    margin: 0;
+    color: gray;
+}
+
+.channel .title .logo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.channel .title .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.channel .title .text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+
+/* video container */
+
+.video-wrapper {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.sm {
+    max-height: 200px;
+    height: 200px;
+}
+
+.lg {
+    max-height: 300px;
+    height: 300px;
+}
+
+
+/*That from Last page*/
+
+/* video container with descriptions, maybe I needs to separate it*/
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.video-container .content {
+    border-radius: 14px;
+    width: auto;
+    height: calc(100% - 50px);
+    aspect-ratio: 16/9;
+    display: block;
+    object-fit: cover;
+}
+
+.video-container .title {
+    font-size: 16px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.video-container .badge {
+    position: absolute;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 20px;
+    right: 10px;
+    bottom: 60px;
+}
+
+.video-container .description {
+    margin-bottom: 0px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container .description p {
+    font-size: 13px;
+    color: gray;
+    margin: 0;
+}
+
+/*reusable*/
+
+.arrow-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+    /*width: 66px;*/
+    justify-content: space-between;
+}
+
+.arrow-buttons-wrapper > *:not(:last-child) {
+    margin-right: 10px; /* adds 10px margin between all child elements except for the last one */
+  }
+
+  @media (max-width: 767px) {
+    .main {
+        min-height: calc(100% - 50px);
+        /* subtract footer height from viewport height */
+        padding-bottom: 100px;
+        /* height of footer */
+    }
+
+    .container {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .column-left {
+        display: none;
+    }
+
+    .hideable {
+        display: none;
+    }
+
+    .channel .title {
+        display: none;
+    }
+    /*
+    .content {
+        flex-direction: column;
+    }
+
+    .channel {
+        flex-direction: column;
+    }*/
+
+    .video-wrapper {
+        all: unset;
+        flex-direction: column;
+    }
+
+    .video-container {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .video-container .title {
+        display: block;
+    }
+  }
